@@ -6,7 +6,7 @@ We propose a Natural Language Processing (NLP)-based approach to identify potent
 The proposed system uses a sentence-level analysis of podcast transcripts and claims from a fact-checked database by encoding these into a latent space, which is then explored to search for pairs with high semantic similarity. 
 This approach resulted in SpotiFact, a curated dataset of 3105 claims from the Spotify Podcast Dataset compiled for claim verification.
 We find that although most matched pairs are unlikely to be directly related, results suggest facts and misinformation spread at roughly the same rate within Spotify podcasts. 
-In addition, we build a set of machine learning models that are able to automatically detect misinformation in podcast transcripts, out of which a SentenceBERT + Linear Classifier performs best with an AUC score of 0.67. 
+In addition, we build a set of machine learning models that are able to automatically detect misinformation in podcast transcripts, out of which a SentenceBERT + Linear Classifier performs best with an AUC score of 0.69. 
 
 ## Overview
 
