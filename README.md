@@ -4,15 +4,13 @@
 
 We propose a Natural Language Processing (NLP)-based approach to identify potentially misinformative claims in podcast transcripts. 
 The proposed system uses a sentence-level analysis of podcast transcripts and claims from a fact-checked database by encoding these into a latent space, which is then explored to search for pairs with high semantic similarity. 
-This approach resulted in SpotiFact, a dataset of more than 27 million similar pairs from the Spotify Podcast Dataset compiled to link stance (whether in agreement or not), out of which we manually label a subset of 1,200 claims from the top 3000 claims with highest similarity scores. 
+This approach resulted in SpotiFact, a curated dataset of 3105 claims from the Spotify Podcast Dataset compiled for claim verification.
 We find that although most matched pairs are unlikely to be directly related, results suggest facts and misinformation spread at roughly the same rate within Spotify podcasts. 
 In addition, we build a set of machine learning models that are able to automatically detect misinformation in podcast transcripts, out of which a SentenceBERT + Linear Classifier performs best with an AUC score of 0.67. 
 
 ## Overview
 
 This repo contains code written to explore misinformation within Spotify Podcasts. The contributers are Jonathan Leo, Omar Jiménez, and Abhijeet Tomar. This started off as a class project within the Georgia Tech class CS 8803, Data Science for Social Networks, taught by Dr. Srijan Kumar.
-
-The preprocessing step can be performed locally on your machine, but the rest of the steps require Google Colab and Google Drive. We used these tools due to limited computational and storage resources. For this project we upgraded to Google Colab Pro ($9.99 per month), which allows for more GPU resources and more instance runtime, and Google One Basic ($1.99 per month), which upgrades Google Drive storage to 100 GB (compared to 15 GB). 
 
 Steps to properly setup the folder structure within Google Drive is detailed below.
 
